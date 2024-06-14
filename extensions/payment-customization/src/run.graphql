@@ -1,0 +1,17 @@
+query RunInput {
+  cart {
+    cost {
+      	subtotalAmount {
+        amount
+        currencyCode
+      }
+      totalAmount {
+        amount
+      }
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+}

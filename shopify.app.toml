@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d88061683bfdf245d73acdd490bb0074"
+name = "my-little-day"
+handle = "my-little-day"
+application_url = "https://repeated-stationery-vsnet-strict.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "xovak-development.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "customer_read_customers,customer_read_draft_orders,customer_read_orders,customer_write_customers,read_checkout_branding_settings,read_checkouts,read_content,read_metaobject_definitions,read_metaobjects,read_payment_customizations,read_products,write_checkout_branding_settings,write_checkouts,write_content,write_metaobject_definitions,write_metaobjects,write_payment_customizations,write_products"
+
+[auth]
+redirect_urls = [
+  "https://repeated-stationery-vsnet-strict.trycloudflare.com/auth/callback",
+  "https://repeated-stationery-vsnet-strict.trycloudflare.com/auth/shopify/callback",
+  "https://repeated-stationery-vsnet-strict.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
